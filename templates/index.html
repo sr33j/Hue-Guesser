@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hue Guesser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hue Guesser</h1>
+        <div id="color-box" class="color-display"></div>
+        <div class="controls">
+            <input type="number" id="red-value" placeholder="R" min="0" max="255">
+            <input type="number" id="green-value" placeholder="G" min="0" max="255">
+            <input type="number" id="blue-value" placeholder="B" min="0" max="255">
+            <button id="guess-btn">Guess</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
